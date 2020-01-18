@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>电商内部系统导航</title>
+    <style>
+    html,
+    body {
+        margin: 0;
+        padding: 20px;
+        height: 100%;
+        background: #F7F7F7 url("./img/bg1.png") no-repeat fixed top;
+        /*opacity: 1;*/
+    }
+
+    .container {
+        /*background: rgba(199, 199 ,200, 0.1)*/
+        margin-bottom: 30px;
+    }
+
+    .container-header {
+        display: flex;
+        align-items: center;
+        font-size: 28px;
+        font-weight: bold;
+        height: 40px;
+        /*padding-left: 80%;*/
+        text-align: right;
+    }
+
+    .container-body {
+        display: flex;
+        border-top: 1px solid #dfdfdf;
+        padding: 20px 10px 0 100px;
+        /*justify-content: space-between;*/
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .container div {
+        display: flex;
+    }
+
+    .item-block {
+        /*border: 1px solid #dfdfdf;*/
+        box-shadow: 10px 10px 10px #876;
+        flex-direction: column;
+        height: 160px;
+        width: 24%;
+        margin-bottom: 20px;
+        margin-right: 10px;
+        background: rgba(2, 34, 4, 0.2)
+
+    }
+
+    a:link {
+        /* 超链接正常状态下的样式 */
+        color: #000000;
+        /* 黑色 */
+        text-decoration: none;
+        /* 无下划线 */
+    }
+
+    a:visited {
+        /* 访问过的超链接 */
+        color: #000000;
+        /* 黑色 */
+        text-decoration: none;
+        /* 无下划线 */
+    }
+
+
+    .item-top {
+        height: 80px;
+        padding: 20px;
+    }
+
+    .item-logo {
+        width: 60px;
+        height: 60px;
+        margin-right: 20px;
+
+    }
+
+    .item-logo img {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .item-body {
+        flex-direction: column;
+    }
+
+    .item-bottom {
+        height: 40px;
+        justify-content: space-around;
+        align-items: center;
+        color: #888888;
+        background-color: #F7F7F7;
+        font-size: 13px;
+    }
+
+    .title {
+        font-size: 16px;
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+
+    .notice {
+        font-size: 12px;
+        color: #888;
+    }
+
+    .divider {
+        height: 20px;
+        width: 1px;
+        background-color: #dfdfdf;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-header">CRM系统</div>
+        <div class="container-body">
+            <div class="item-block">
+                <a href="http://10.90.1.118/" target="_blank">
+                    <div class="item-top">
+                        <div class="item-logo"><img src="img/gitlab.png"></div>
+                        <div class="item-body">
+                            <span class="title">CRM</span>
+                            <span class="notice">仅内网可使用</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="item-bottom">
+                    <div>帮助文档</div>
+                </div>
+            </div>
+            <div class="item-block">
+                <a href="http://120.195.166.248:8080/" target="_blank">
+                    <div class="item-top">
+                        <div class="item-logo"><img src="img/ldap.svg"></div>
+                        <div class="item-body">
+                            <span class="title">CRM</span>
+                            <span class="notice">建议外网使用</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="item-bottom">
+                    <div>帮助文档</div>
+                </div>
+            </div>
+            <div class="item-block">
+                <a target="_blank">
+                    <div class="item-top">
+                        <div class="item-logo"><img src="img/wiki.png"></div>
+                        <div class="item-body">
+                            <span class="title">移动版APP</span>
+                            <span class="notice">下载移动版</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="item-bottom">
+                    <div>帮助文档</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="container-header">ERP系统</div>
+        <div class="container-body">
+            <div class="item-block">
+                <a href="http://10.9.2.107/k3cloud" target="_blank">
+                    <div class="item-top">
+                        <div class="item-logo"><img src="img/gitlab.png"></div>
+                        <div class="item-body">
+                            <span class="title">ERP</span>
+                            <span class="notice">仅内网可使用</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="item-bottom">
+                    <div>帮助文档</div>
+                </div>
+            </div>
+            <div class="item-block">
+                <a href="http://58.218.196.217:18099/k3cloud" target="_blank">
+                    <div class="item-top">
+                        <div class="item-logo"><img src="img/ldap.svg"></div>
+                        <div class="item-body">
+                            <span class="title">ERP</span>
+                            <span class="notice">仅外网可使用</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="item-bottom">
+                    <div>帮助文档</div>
+                </div>
+            </div>
+            <div class="item-block">
+                <a target="_blank">
+                    <div class="item-top">
+                        <div class="item-logo"><img src="img/wiki.png"></div>
+                        <div class="item-body">
+                            <span class="title">客户端</span>
+                            <span class="notice">下载</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="item-bottom">
+                    <div>帮助文档</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="container-header">运维导航</div>
+        <div class="container-body">
+            <div class="item-block">
+                <a target="_blank">
+                    <div class="item-top">
+                        <div class="item-logo"><img src="img/spug.png"></div>
+                        <div class="item-body">
+                            <span class="title">运维平台</span>
+                            <span class="notice"></span>
+                        </div>
+                    </div>
+                </a>
+                <div class="item-bottom">
+                    <a target="_blank">
+                        <div>源码地址</div>
+                    </a>
+                </div>
+            </div>
+            <div class="item-block">
+                <a target="_blank">
+                    <div class="item-top">
+                        <div class="item-logo"><img src="img/grafana.png"></div>
+                        <div class="item-body">
+                            <span class="title">监控系统</span>
+                            <span class="notice">Grafana 监控平台</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="item-bottom">
+                    <div>帮助文档</div>
+                </div>
+            </div>
+            
+            <div class="item-block">
+                <a target="_blank">
+                    <div class="item-top">
+                        <div class="item-logo"><img src="img/sql2.png"></div>
+                        <div class="item-body">
+                            <span class="title">数据库系统</span>
+                            <span class="notice">数据库审核平台</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="item-bottom">
+                    <div>帮助文档</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
